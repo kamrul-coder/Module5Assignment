@@ -9,8 +9,8 @@ void main(){
 }
 
 class Book {
-  String ? title, author;
-  double ? price;
+  String title, author;
+  double price;
 
   // Constructor
   Book(this.title, this.author, this.price){
@@ -18,11 +18,11 @@ class Book {
   }
 
   // Discount Method
-  double discountedPrice(double discountPercent){
-    return price! - price! * discountPercent /100;
+  discountedPrice(double discountPercent){
+    return price - price * discountPercent /100;
   }
 
-  // Display Book Details
+  // Display Book Details Method
   display(double discountPercent){
     print("Title: $title");
     print("Author: $author");
